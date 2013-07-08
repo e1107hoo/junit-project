@@ -25,4 +25,5 @@ public class StringUtilsTest {
 		StringUtils sut = new StringUtils();
 		assertThat(sut.toSnakeCase("HelloWorld"), is("hello_world"));
 	}
+	
 }
