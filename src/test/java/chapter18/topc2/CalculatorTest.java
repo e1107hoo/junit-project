@@ -15,13 +15,13 @@ import org.junit.Test;
 public class CalculatorTest {
 	
 	@Test
-	public void 第2引数に0を指定してdivideを呼び出すと例外が発生する() {
+	public void 第2引数に0を指定してdivideを呼び出すと例外が発生する() throws Exception {
 		Calculator clc = new Calculator();
 		clc.divide(2, 0);
 	}
 	
 	@Test
-	public void 第1引数を4第2引数を2で2を返す() {
+	public void 第1引数を4第2引数を2で2を返す() throws Exception {
 		Calculator clc = new Calculator();
 		assertThat(clc.divide(4, 2), is(2));
 	}
