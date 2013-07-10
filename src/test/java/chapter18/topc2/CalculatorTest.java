@@ -14,7 +14,7 @@ import org.junit.Test;
  */
 public class CalculatorTest {
 	
-	@Test
+	@Test(expected = IllegalAccessException.class)
 	public void 第2引数に0を指定してdivideを呼び出すと例外が発生する() throws Exception {
 		Calculator clc = new Calculator();
 		clc.divide(2, 0);
