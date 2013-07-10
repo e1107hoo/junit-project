@@ -10,8 +10,8 @@ package chapter18.topc2;
 public class Calculator {
 	
 	public int divide(int x, int y) {
-		return 0;
 		
+		return 0;
 	}
 	
 }
