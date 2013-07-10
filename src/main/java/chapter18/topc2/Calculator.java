@@ -9,11 +9,7 @@ package chapter18.topc2;
  */
 public class Calculator {
 	
-	/**
-	 * @param i
-	 * @param j
-	 */
-	public int divide(int i, int j) {
+	public int divide(int x, int y) {
 		return 0;
 		
 	}
