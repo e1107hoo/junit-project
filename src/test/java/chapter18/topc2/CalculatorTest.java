@@ -25,4 +25,5 @@ public class CalculatorTest {
 		Calculator clc = new Calculator();
 		assertThat(clc.divide(4, 2), is(2));
 	}
+	
 }

@@ -9,12 +9,11 @@ package chapter19.topic3;
  */
 public class Counter {
 	
-	/**
-	 * @return
-	 */
+	int	count	= 0;
+	
+	
 	public int increment() {
-		// TODO 自動生成されたメソッド・スタブ
-		return 1;
+		return ++count;
 	}
 	
 }
