@@ -51,4 +51,24 @@ public class CounterTest {
 			
 		}
 	}
+	
+	public static class increment50回実行状態 {
+		
+		Counter	sut;
+		
+		
+		@Before
+		public void setUp() {
+			sut = new Counter();
+			for (int i = 0; i < 50; i++) {
+				sut.increment();
+			}
+		}
+		
+		@Test
+		public void incrementメソッドを50回実行した状態でincrementメソッドを実行すると51が取得できる() {
+			assertThat(sut.increment(), is(51));
+			
+		}
+	}
 }
