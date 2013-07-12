@@ -15,8 +15,8 @@ import org.junit.Test;
 public class CounterTest {
 	
 	@Test
-	public void incrementメソッドを実行すると1が取得できる(){
-		Counter sut = new Counter ;
+	public void incrementメソッドを実行すると1が取得できる() {
+		Counter sut = new Counter();
 		assertThat(sut.increment(), is(1));
 	}
 }
