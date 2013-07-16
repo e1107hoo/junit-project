@@ -19,4 +19,10 @@ public class NumberUtilsTest {
 		NumberUtils sut = new NumberUtils();
 		assertThat(sut.isEven(10), is(true));
 	}
+	
+	@Test
+	public void 入力値に7を与えるとfalseを返す() {
+		NumberUtils sut = new NumberUtils();
+		assertThat(sut.isEven(7), is(false));
+	}
 }

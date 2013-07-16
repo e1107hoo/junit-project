@@ -9,13 +9,8 @@ package chapter18.topic4;
  */
 public class NumberUtils {
 	
-	/**
-	 * @param i
-	 * @return
-	 */
 	public boolean isEven(int i) {
-		// TODO 自動生成されたメソッド・スタブ
-		return true;
+		return i % 2 == 0 ? true : false;
 	}
 	
 }
