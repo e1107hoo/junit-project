@@ -67,6 +67,12 @@ public class ItemStockTest {
 			
 		}
 		
+		@Test
+		public void addでbikeを追加するとgetnumでbookとbikeを返す() {
+			Item bike = new Item("bike", 6980);
+			sut.add(bike);
+			assertThat(sut.getNum(bike), is(1));
+		}
 	}
 	
 }
