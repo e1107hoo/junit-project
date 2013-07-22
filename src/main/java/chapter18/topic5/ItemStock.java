@@ -3,31 +3,33 @@
  */
 package chapter18.topic5;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author mind
  *
  */
 public class ItemStock {
 	
-	int	values;
+	private final Map<String, Integer>	values	= new HashMap<String, Integer>();
 	
 	
-	public ItemStock() {
-		values = 0;
-		
-	}
-	
-	public int getNum(Item book) {
-		
-		if (values == 1) {
-			return 1;
-		} else {
-			return 0;
+	public int getNum(Item item) {
+		Integer num = values.get(item.name);
+		if (num == null) {
+			num = 0;
 		}
+		return num;
 	}
 	
-	public void add(Item book) {
-		values = 1;
+	public void add(Item item) {
+		Integer num = values.get(item.name);
+		if (num == null) {
+			num = 0;
+		}
+		num++;
+		values.put(item.name, num);
 	}
 	
 }
