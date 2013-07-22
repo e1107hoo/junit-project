@@ -9,11 +9,25 @@ package chapter18.topic5;
  */
 public class ItemStock {
 	
-	/**
-	 * @return
-	 */
+	int	values;
+	
+	
+	public ItemStock() {
+		values = 0;
+		
+	}
+	
 	public int getNum(Item book) {
-		return 0;
+		
+		if (values == 1) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+	
+	public void add(Item book) {
+		values = 1;
 	}
 	
 }
