@@ -12,7 +12,7 @@ public class ItemStock {
 	/**
 	 * @return
 	 */
-	public int getNum() {
+	public int getNum(Item book) {
 		return 0;
 	}
 	

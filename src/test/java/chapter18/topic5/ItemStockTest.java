@@ -13,7 +13,9 @@ public class ItemStockTest {
 	@Test
 	public void 初期状態でgetNumから0が取得できる() {
 		ItemStock sut = new ItemStock();
-		assertThat(sut.getNum(), is(0));
+		Item book = new Item("book", 3000);
+		
+		assertThat(sut.getNum(book), is(0));
 		
 	}
 	
