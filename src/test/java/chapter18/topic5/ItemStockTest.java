@@ -60,6 +60,13 @@ public class ItemStockTest {
 			assertThat(sut.getNum(book), is(1));
 		}
 		
+		@Test
+		public void addでbookを追加するとgetNumで2を返す() {
+			sut.add(book);
+			assertThat(sut.getNum(book), is(2));
+			
+		}
+		
 	}
 	
 }
